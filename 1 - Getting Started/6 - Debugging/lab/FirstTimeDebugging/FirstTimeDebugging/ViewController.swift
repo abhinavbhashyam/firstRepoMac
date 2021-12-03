@@ -8,10 +8,10 @@ class ViewController: UIViewController {
         let sample = "sample"
         print(sample)
         
-        if false {
-            print("Will this line of code ever be reached?")
-            someMethod()
-        }
+//      if false {
+//          print("Will this line of code ever be reached?")
+//          someMethod()
+//      }
         
         
     }
