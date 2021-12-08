@@ -5,10 +5,21 @@
 
  You think it might be fun to incorporate some friendly competition into your fitness tracking app. Users will be able to compete with friends in small fitness challenges. However, to do this users will need a password-protected account. Write an if-else statement below that will check that the entered user name and password match the stored user name and password. While the password should be case sensitive, users should be able to log in even if their entered user name has the wrong capitalization. If the user name and password match, print "You are now logged in!" Otherwise, print "Please check your user name and password and try again."
  */
+
+import Darwin
 let storedUserName = "TheFittest11"
 let storedPassword = "a8H1LuK91"
 let enteredUserName = "thefittest11"
 let enteredPassword: String = "a8H1Luk9"
+if ((storedUserName.lowercased() == enteredUserName.lowercased()) && (storedPassword == enteredPassword))
+{
+    print("You are now logged in!")
+}
+else
+{
+    print("Please check your user name and password and try again.")
+}
+
 
 
 /*:
@@ -19,7 +30,10 @@ let enteredPassword: String = "a8H1Luk9"
 import Foundation
 let userName = "StepChallenger"
 let searchName = "step"
-
+if ((userName.lowercased()).contains(searchName.lowercased()))
+{
+    print("The actual username contains the search term")
+}
 
 /*:
  _Copyright © 2021 Apple Inc._
