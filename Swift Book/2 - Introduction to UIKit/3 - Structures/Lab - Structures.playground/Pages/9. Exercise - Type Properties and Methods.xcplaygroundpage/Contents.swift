@@ -3,12 +3,23 @@
  
  Imagine you have an app that requires the user to log in. You may have a `User` struct similar to that shown below. However, in addition to keeping track of specific user information, you might want to have a way of knowing who the current logged in user is. Create a `currentUser` type property on the `User` struct below and assign it to a `user` object representing you. Now you can access the current user through the `User` struct. Print out the properties of `currentUser`.
  */
+
+import Darwin
 struct User {
         
     var userName: String
     var email: String
     var age: Int
+    static var currentUser: User
+    {
+        User(userName: "Abhi", email: "gmail", age: 12)
+    }
+
+    
+ 
 }
+
+print("The current user's name is \(User.currentUser.userName)")
 
 
 /*:

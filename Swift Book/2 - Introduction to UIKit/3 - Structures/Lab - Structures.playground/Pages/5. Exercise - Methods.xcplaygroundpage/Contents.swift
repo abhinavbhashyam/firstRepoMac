@@ -24,8 +24,19 @@ struct Post {
     var message: String
     var likes: Int
     var numberOfComments: Int
+    
+    mutating func increment()
+    {
+        likes += 1
+    }
 
 }
+
+var post1 = Post(message: "Hi", likes: 4, numberOfComments: 5)
+print(post1.likes)
+post1.increment()
+print(post1.likes)
+
 
 
 /*:
